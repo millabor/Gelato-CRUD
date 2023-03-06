@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Gelatos Sorveteria</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="logo.png">
+</head>
+
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="http://localhost/Gelato/index.html" target="_blank" class="logo"><img src="logo.png"></a>
+			<ul>
+				<li><a href="http://localhost/Gelato/index.html" target="_blank">Home</a></li>
+				<li><a href="http://localhost/Gelato/cadastro.php" target="_blank">Cadastro</a></li>
+				<li><a href="http://localhost/Gelato/catalogo.html" target="_blank">Catálogo</a></li>
+				<li><a href="http://localhost/Gelato/usuarios.php" target="_blank">Perfil</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textBox">
+				<h2> <span>GELATOS</span></h2>
+				<p> A maior sorveteria da américa latina abre as portas, seja nosso cliente premium e garanta as
+					melhores promoçôes do país!</p>
+				<a href="http://localhost/Gelato/catalogo.html" target="_blank">Veja mais</a>
+			</div>
+			<div class="imgBox">
+				<img src="Sorvete1.png" class="GELATOS">
+			</div>
+		</div>
+		<ul class="thumb">
+			<li><img src="thumb1.png" onclick="imgSlider('Sorvete1.png');changeCircleColor('#FFE1B3')"></li>
+			<li><img src="thumb2.png" onclick="imgSlider('Sorvete2.png');changeCircleColor('#BFE1D1')"></li>
+			<li><img src="thumb3.png" onclick="imgSlider('Sorvete3.png');changeCircleColor('#FFD1D1')"></li>
+		</ul>
+	</section>
+	<script type="text/javascript">
+		function imgSlider(anything) {
+			document.querySelector('.GELATOS').src = anything;
+		}
+		function changeCircleColor(color) {
+			const circle = document.querySelector('.circle');
+			circle.style.background = color;
+		}
+	</script>
+
+	<script>window.alert("feito pelos membros \n Milla B. Borges de Araujo; \n Maria Luiza dos Santos; \n Tainá C. dos Santos; \n Wemilli de Oliveira; \n Julia C. Miranda, 2°DS");
+	</script>
+
+</body>
+
+</html>
